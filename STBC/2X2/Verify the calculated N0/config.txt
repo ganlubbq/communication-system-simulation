@@ -1,0 +1,12 @@
+Frame length = 100000
+
+From SNR = 1
+To SNR = 9
+SNR step = 2
+
+Accumulated frame errors = 300
+
+Generator sequence 1 = 0133
+Generator sequence 2 = 0171
+
+Modulation format = 2PSK

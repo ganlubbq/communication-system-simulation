@@ -1,0 +1,54 @@
+# Project: CC simulation
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = timer.o transmitter.o channel.o fileIO.o main.o receiver.o cc.o LAB524Rand.o modem.o $(RES)
+LINKOBJ  = timer.o transmitter.o channel.o fileIO.o main.o receiver.o cc.o LAB524Rand.o modem.o $(RES)
+LIBS =  -L"D:/Dev-Cpp/lib"  
+INCS =  -I"D:/Dev-Cpp/include" 
+CXXINCS =  -I"D:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"D:/Dev-Cpp/include/c++/3.4.2/backward"  -I"D:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"D:/Dev-Cpp/include/c++/3.4.2"  -I"D:/Dev-Cpp/include" 
+BIN  = CC.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before CC.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "CC.exe" $(LIBS)
+
+timer.o: timer.cpp
+	$(CPP) -c timer.cpp -o timer.o $(CXXFLAGS)
+
+transmitter.o: transmitter.cpp
+	$(CPP) -c transmitter.cpp -o transmitter.o $(CXXFLAGS)
+
+channel.o: channel.cpp
+	$(CPP) -c channel.cpp -o channel.o $(CXXFLAGS)
+
+fileIO.o: fileIO.cpp
+	$(CPP) -c fileIO.cpp -o fileIO.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+receiver.o: receiver.cpp
+	$(CPP) -c receiver.cpp -o receiver.o $(CXXFLAGS)
+
+cc.o: cc.cpp
+	$(CPP) -c cc.cpp -o cc.o $(CXXFLAGS)
+
+LAB524Rand.o: LAB524Rand.cpp
+	$(CPP) -c LAB524Rand.cpp -o LAB524Rand.o $(CXXFLAGS)
+
+modem.o: modem.cpp
+	$(CPP) -c modem.cpp -o modem.o $(CXXFLAGS)
