@@ -1,0 +1,16 @@
+Frame length = 60
+
+From SNR = 0
+To SNR = 0
+SNR step = 1
+
+Accumulated frame errors = 100
+
+Generator sequence 1 = 0133
+Generator sequence 2 = 0171
+
+Number of memeory element = 6
+
+Number of list decoding output = 3000
+
+dmin = 12

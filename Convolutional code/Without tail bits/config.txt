@@ -1,0 +1,10 @@
+Frame length = 120
+
+From SNR = 0
+To SNR = 10
+SNR step = 1
+
+Accumulated frame errors = 100
+
+Generator sequence 1 = 05
+Generator sequence 2 = 07
