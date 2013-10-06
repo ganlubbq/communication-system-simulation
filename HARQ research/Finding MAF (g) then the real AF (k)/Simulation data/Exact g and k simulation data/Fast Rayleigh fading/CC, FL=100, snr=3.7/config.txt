@@ -1,0 +1,16 @@
+Frame length=100
+
+From SNR=3.7
+To SNR=3.7
+SNR step=1
+
+Allowable deviation=0.000000001
+
+Number of retransmission for avg=1000000
+
+Generator sequence 1 = 0133
+Generator sequence 2 = 0171
+
+Number of memeory element = 6
+
+Fading duration in number of symbols = 1

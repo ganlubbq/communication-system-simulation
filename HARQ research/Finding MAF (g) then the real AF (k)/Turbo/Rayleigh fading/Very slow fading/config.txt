@@ -1,0 +1,13 @@
+Frame length = 1000
+
+From SNR = 10.5
+To SNR = 10.5
+SNR step = 1
+
+Iteration = 8
+
+Allowable deviation = 0.0000001
+
+Number of retransmission for avg = 1000000
+
+Fading duration in number of symbols = 1000

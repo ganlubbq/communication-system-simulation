@@ -1,0 +1,9 @@
+Frame length=1000
+
+From SNR=3.7
+To SNR=3.7
+SNR step=1
+
+Number of MAF for avg=1000
+
+Allowable deviation=0.0001

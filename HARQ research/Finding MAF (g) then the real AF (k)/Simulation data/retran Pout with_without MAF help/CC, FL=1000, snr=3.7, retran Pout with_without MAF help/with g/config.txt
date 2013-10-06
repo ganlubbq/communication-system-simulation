@@ -1,0 +1,13 @@
+Frame length=1000
+
+From SNR=3.7
+To SNR=3.7
+SNR step=1
+
+Allowable deviation=0.001
+
+Number of retransmission for avg=5000
+
+From retransmission AF=0
+To retransmission AF=0.6
+Retransmission AF step=0.05

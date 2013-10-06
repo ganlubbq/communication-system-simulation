@@ -1,0 +1,14 @@
+Frame length=128
+
+From SNR=4.7
+To SNR=4.7
+SNR step=1
+
+Allowable deviation=0.000000001
+
+Number of retransmission for avg=100000
+
+Generator sequence 1 = 035
+Generator sequence 2 = 023
+
+Number of memeory element = 4

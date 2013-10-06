@@ -1,0 +1,48 @@
+# Project: CC simulation
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = cc.o channel.o main.o random.o receiver.o timer.o transmitter.o $(RES)
+LINKOBJ  = cc.o channel.o main.o random.o receiver.o timer.o transmitter.o $(RES)
+LIBS =  -L"D:/Dev-Cpp/lib" ../../../../libstdc++.a  
+INCS =  -I"D:/Dev-Cpp/include" 
+CXXINCS =  -I"D:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"D:/Dev-Cpp/include/c++/3.4.2/backward"  -I"D:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"D:/Dev-Cpp/include/c++/3.4.2"  -I"D:/Dev-Cpp/include" 
+BIN  = CC.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before CC.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "CC.exe" $(LIBS)
+
+cc.o: cc.cpp
+	$(CC) -c cc.cpp -o cc.o $(CFLAGS)
+
+channel.o: channel.cpp
+	$(CC) -c channel.cpp -o channel.o $(CFLAGS)
+
+main.o: main.cpp
+	$(CC) -c main.cpp -o main.o $(CFLAGS)
+
+random.o: random.cpp
+	$(CC) -c random.cpp -o random.o $(CFLAGS)
+
+receiver.o: receiver.cpp
+	$(CC) -c receiver.cpp -o receiver.o $(CFLAGS)
+
+timer.o: timer.cpp
+	$(CC) -c timer.cpp -o timer.o $(CFLAGS)
+
+transmitter.o: transmitter.cpp
+	$(CC) -c transmitter.cpp -o transmitter.o $(CFLAGS)

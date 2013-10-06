@@ -1,0 +1,13 @@
+Frame length=100
+
+From SNR=0
+To SNR=2
+SNR step=0.5
+
+Accumulated frame errors=100
+
+Iteration=2
+
+Number of MAF for avg=100
+
+Allowable deviation=0.001
