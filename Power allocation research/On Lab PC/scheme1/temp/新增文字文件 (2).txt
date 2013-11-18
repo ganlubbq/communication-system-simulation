@@ -1,0 +1,11 @@
+Equal power:
+By analysis
+at snr=6, ber=8.692e-4
+by simulation
+at snr=6, ber=8.417e-4
+
+Optimal
+By analysis
+at snr=6, ber=6.769e-4
+by simulation
+at snr=6, ber=6.695e-004

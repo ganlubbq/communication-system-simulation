@@ -1,0 +1,12 @@
+Frame length = 506
+
+From SNR = 2
+To SNR = 6
+SNR step = 2
+
+Accumulated frame errors = 100
+
+Generator sequence 1 = 0133
+Generator sequence 2 = 0171
+
+Modulation format = 16QAM
