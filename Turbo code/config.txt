@@ -1,0 +1,9 @@
+Frame length=1000
+
+From SNR=0
+To SNR=10
+SNR step=0.2
+
+Accumulated frame errors=100
+
+Iteration=8

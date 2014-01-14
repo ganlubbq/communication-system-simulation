@@ -1,0 +1,11 @@
+Frame length = 1000
+
+From SNR = 0
+To SNR = 5
+SNR step = 0.5
+
+Accumulated frame errors = 100
+
+Iteration = 8
+
+Fading duration in number of symbols = 1000
