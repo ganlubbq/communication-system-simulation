@@ -1,0 +1,18 @@
+Frame length = 40
+Matched coded bits length = 144
+
+From SNR = 4
+To SNR = 4
+SNR step = 1
+Accumulated frame errors = 500
+
+Nfft = 1024
+Number of physical resource blocks = 50
+
+Generator sequence 1 = 0133
+Generator sequence 2 = 0171
+Generator sequence 3 = 0165
+
+File name for channel data = TU_NLOS_PathGain_30km_Len400
+
+Frequency diversity = 6

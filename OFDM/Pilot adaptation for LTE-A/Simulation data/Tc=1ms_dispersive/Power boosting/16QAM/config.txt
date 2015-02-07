@@ -1,0 +1,19 @@
+Frame length = 1500
+
+From SNR = 40
+To SNR = 60
+
+SNR step = 2
+
+Accumulated frame errors = 100
+
+Modulation format = 16QAM
+
+Nfft = 128
+Default pilot spacing = 6
+Default power ratio of pilot to data = 1
+Number of OFDM symbols for one fading block = 14
+Maximum allowable power boosting = 2
+Number of power boosting search points in (0, MaxPwrBoostLimit] = 10
+
+Turbo decoding iteration = 8

@@ -1,0 +1,14 @@
+Frame length = 40
+Matched coded bits length = 144
+
+From SNR = -5
+To SNR = -5
+SNR step = 1
+Accumulated frame errors = 100
+
+Nfft = 1024
+Number of physical resource blocks = 50
+
+Generator sequence 1 = 0133
+Generator sequence 2 = 0171
+Generator sequence 3 = 0165
