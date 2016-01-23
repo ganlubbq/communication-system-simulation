@@ -1,0 +1,11 @@
+Frame length=10
+
+From SNR=3
+To SNR=3
+SNR step=1
+
+Accumulated frame errors=1
+
+Iteration=1
+
+Noise std = 0

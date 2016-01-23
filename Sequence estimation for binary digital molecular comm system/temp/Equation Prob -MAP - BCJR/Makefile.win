@@ -1,0 +1,51 @@
+# Project: Turbo code simulation
+# Makefile created by Dev-C++ 4.9.9.9
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = 
+OBJ      = timer.o transmitter.o channel.o fileIO.o main.o receiver.o turbo.o LAB524Rand.o $(RES)
+LINKOBJ  = timer.o transmitter.o channel.o fileIO.o main.o receiver.o turbo.o LAB524Rand.o $(RES)
+LIBS     = -L"D:/Program Files/Dev-Cpp/lib" -L"D:/Program Files/Dev-Cpp/lib/gcc" -static-libstdc++ -static-libgcc  
+INCS     = -I"D:/Program Files/Dev-Cpp/include" 
+CXXINCS  = -I"D:/Program Files/Dev-Cpp/include"  -I"D:/Program Files/Dev-Cpp/include/ddk"  -I"D:/Program Files/Dev-Cpp/include/gdiplus"  -I"D:/Program Files/Dev-Cpp/include/GL" 
+BIN      = "Turbo code.exe"
+CXXFLAGS = $(CXXINCS)  
+CFLAGS   = $(INCS)  
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before "Turbo code.exe" all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Turbo code.exe" $(LIBS)
+
+timer.o: timer.cpp
+	$(CPP) -c timer.cpp -o timer.o $(CXXFLAGS)
+
+transmitter.o: transmitter.cpp
+	$(CPP) -c transmitter.cpp -o transmitter.o $(CXXFLAGS)
+
+channel.o: channel.cpp
+	$(CPP) -c channel.cpp -o channel.o $(CXXFLAGS)
+
+fileIO.o: fileIO.cpp
+	$(CPP) -c fileIO.cpp -o fileIO.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+receiver.o: receiver.cpp
+	$(CPP) -c receiver.cpp -o receiver.o $(CXXFLAGS)
+
+turbo.o: turbo.cpp
+	$(CPP) -c turbo.cpp -o turbo.o $(CXXFLAGS)
+
+LAB524Rand.o: LAB524Rand.cpp
+	$(CPP) -c LAB524Rand.cpp -o LAB524Rand.o $(CXXFLAGS)

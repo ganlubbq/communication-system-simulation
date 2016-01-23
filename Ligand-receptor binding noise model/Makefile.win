@@ -1,0 +1,42 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.0.0.7
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = 
+OBJ      = fileIO.o LAB524Rand.o main.o timer.o list_example.o $(RES)
+LINKOBJ  = fileIO.o LAB524Rand.o main.o timer.o list_example.o $(RES)
+LIBS     = -L"C:/Program Files/Dev-Cpp/lib" -L"C:/Program Files/Dev-Cpp/lib/gcc" -static-libstdc++ -static-libgcc  
+INCS     = -I"C:/Program Files/Dev-Cpp/include" 
+CXXINCS  = -I"C:/Program Files/Dev-Cpp/include" 
+BIN      = ligand_noise.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS   = $(INCS)  
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before ligand_noise.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "ligand_noise.exe" $(LIBS)
+
+fileIO.o: fileIO.cpp
+	$(CPP) -c fileIO.cpp -o fileIO.o $(CXXFLAGS)
+
+LAB524Rand.o: LAB524Rand.cpp
+	$(CPP) -c LAB524Rand.cpp -o LAB524Rand.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+timer.o: timer.cpp
+	$(CPP) -c timer.cpp -o timer.o $(CXXFLAGS)
+
+list_example.o: list_example.cpp
+	$(CPP) -c list_example.cpp -o list_example.o $(CXXFLAGS)

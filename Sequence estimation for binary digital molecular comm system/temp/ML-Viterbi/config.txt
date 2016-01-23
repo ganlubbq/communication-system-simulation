@@ -1,0 +1,14 @@
+Frame length = 1000
+
+From SNR = 3
+To SNR = 3
+SNR step = 1
+
+Accumulated frame errors = 100
+
+Generator sequence 1 = 0133
+Generator sequence 2 = 0171
+
+Memory order = 5
+
+Noise std = 0.15
